@@ -63,7 +63,7 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->price = $request->price;
         $product->save();
-    
+    //cambio sutil
         $imageCount = 0; 
         foreach ($request->file('image') as $image) {
             if ($imageCount < 7) {
